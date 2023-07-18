@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        div{
+            margin: auto;
+            width: 460px;
+            height: 660px;
+            border: grey solid 2px;
+            border-radius: 5px;
+            user-select: none;
+        }
+        form{
+            width: 420px;
+            height: 520px;
+            position: relative;
+            left: 20px;
+        }
+        span{
+            color: grey;
+        }
+        input{
+            border-radius: 5px;
+            border: lightgrey 1px solid;
+            font-size: 7px;
+            height: 40px;
+            width: 348px;
+        }
+        input[type="radio"]{
+            border-radius: 5px;
+            border: lightgrey 1px solid;
+            height: 15px;
+            width: 15px;
+        }
+        input[type="checkbox"]{
+            border-radius: 5px;
+            border: lightgrey 1px solid;
+            height: 15px;
+            width: 15px;
+        }
+        button[type="submit"]{
+            border: lightgrey 1px solid;
+            border-radius: 5px;
+            height: 50px;
+            width: 350px;
+            background-color: #65bdff;
+            text-align: center;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+ 
+    </style>
+    <script>
+        function fun1(){
+            alert("预订成功");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserve</title>
+</head>
+<body>
+    <div>
+    <form action="">
+        <h2>预订信息</h2>
+        <br><a href="Room.html">切换房型</a>
+        <br><br>
+        姓名：<input type="text">
+        <br><br>
+        入住人数：
+        <select name="" id="">
+            <option value="1人">
+                1人
+            </option>
+            <option value="2人">2人</option>
+            <option value="3人">3人</option>
+            <option value="4人">4人</option>
+        </select>
+        <br><br>
+        居住喜好：
+        <select name="" id="">
+            <option value="xy">向阳</option>
+            <option value="by">背阳</option>
+        </select>
+        <br><br>
+        入住时间：
+        <input type="datetime-local" name="" id="">
+        <br>
+        离开时间：
+        <input type="datetime-local" name="" id="">
+        <br><br>
+        <h4>支付方式</h4>
+        微信支付<input type="radio" name="zf" id="zf">
+        支付宝 <input type="radio" name="zf" id="zf">
+        <br><br>
+        <input type="checkbox" style="vertical-align: middle">
+        <span>阅读并接受协议</span>
+        <br>
+        <br>
+        <center><button type="submit" onclick="fun1()">提交</button></center>
+    </form></div>
+</body>
+</html>

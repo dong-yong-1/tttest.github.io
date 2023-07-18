@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        div{
+            margin: auto;
+
+            width: 460px;
+            height: 520px;
+            border: grey solid 2px;
+            border-radius: 5px;
+            user-select: none;
+        }
+        form{
+            width: 420px;
+            height: 520px;
+            position: relative;
+            left: 20px;
+        }
+        span{
+            color:black;
+
+        }
+        input{
+            border-radius: 5px;
+            border: lightgrey 1px solid;
+            font-size: 7px;
+            height: 40px;
+            width: 348px;
+        }
+        button[type="submit"]{
+            border: lightgrey 1px solid;
+            border-radius: 5px;
+            height: 50px;
+            width: 350px;
+            background-color: #65bdff;
+            text-align: center;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+ 
+    </style>
+      <script>
+        function fun1(){
+            alert("修改成功");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>后台系统</h1>
+            <br><br><br>
+            修改房型：<select name="" id="">
+                <option value="">高级城市景观房</option>
+                <option value="">精选城市景观双床房</option>
+                <option value="">精选城市景观房</option>
+                <option value="">豪华外滩景观房</option>
+                <option value="">高级城市景观套房</option>
+                <option value="">高级城市景观总统套房</option>
+            </select><br><br>
+            <span>修改价格：</span> <input type="text">
+        <br>
+        <br>
+        <center><button type="submit" onclick="fun1()">提交</button></center>
+        </form>
+    </div>
+</body>
+</html>
